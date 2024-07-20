@@ -1,3 +1,8 @@
+# Im working on a better version when it comes to scanning options
+# i think that the old one is really messy!
+# it should be done in 1 day or hour!
+
+
 import time
 import os
 from colorama import Fore, Style
@@ -67,12 +72,13 @@ def system():
 
 # log in logic part
 while 1 == 1:
+    print(Fore.YELLOW + 'ATTAION: use username admin and password admin to access!', Style.RESET_ALL)
     print(Fore.RED + '=======|log in|========', Style.RESET_ALL)
     usr = input("username: ")
     pwd = input("password: ")
     
     # if user eneters usr and pwd correclty, it will sleep for 3 sec and break out of the loop
-    if usr == "doni" and pwd == "2645":
+    if usr == "admin" and pwd == "admin":
         #time.sleep(3)
         break
     else:
